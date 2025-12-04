@@ -12,6 +12,23 @@ You may NOT:
 - Resell Yoink4CM for profit.
 - Build on Yoink4CM code and sell it for profit.
 
+
+From the root folder, the following subfolders are standalone apps:
+
+Audit2CM: accelerate the process of importing device hostnames from external reports into Configuration Manager Device Collections.
+CleanAD: remove inactive computers from Active Directory in seconds.
+AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
+
+
+The following files are needed for Yoink4CM:
+
+- Yoink4CM folder
+- Yoink Software.xml
+- config.ps1
+- integrate_with_ConfigMgr (run as administrator).bat
+
+
+
 <!--
 **Yoink4CM/Yoink4CM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
