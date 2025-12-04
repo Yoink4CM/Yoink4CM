@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ActionDescription Class="Group" DisplayName="Yoink Software" MnemonicDisplayName="Yoink Software">
+  <ShowOn>
+     <string>ContextMenu</string>
+  </ShowOn>
+
+  <ActionGroups>
+   	
+	<ActionDescription Class="Executable" DisplayName="Update Applications and Packages using Yoink4CM">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\easy_launch.bat"</FilePath>
+              <Arguments></Arguments>
+                 
+            </Executable>
+
+    </ActionDescription>
+	<ActionDescription Class="Executable" DisplayName="Remove applications created by Yoink4CM > 120 days ago">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to  executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\yoink4cm_application_cleanup.bat"</FilePath>
+              <Arguments></Arguments>
+               
+            </Executable>
+
+    </ActionDescription>
+	<ActionDescription Class="Executable" DisplayName="Remove packages created by Yoink4CM > 120 days ago">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to  executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\yoink4cm_package_cleanup.bat"</FilePath>
+              <Arguments></Arguments>
+               
+            </Executable>
+
+    </ActionDescription>
+	<ActionDescription Class="Executable" DisplayName="Edit Monthly software installer list">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\monthly.bat"</FilePath>
+              <Arguments></Arguments>
+      
+            </Executable>
+
+    </ActionDescription>
+	<ActionDescription Class="Executable" DisplayName="Edit Quarterly software installer list">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\quarterly.bat"</FilePath>
+              <Arguments></Arguments>
+              
+            </Executable>
+
+    </ActionDescription>
+	<ActionDescription Class="Executable" DisplayName="Check for updates to Yoink4CM">
+      <ShowOn>
+        <string>ContextMenu</string>
+      </ShowOn>
+      <Executable>
+              <!-- Path to  executable -->
+              <FilePath>"C:\Program Files\Yoink Software\Yoink4CM\easy_update.bat"</FilePath>
+              <Arguments></Arguments>
+               
+            </Executable>
+
+    </ActionDescription>
+  </ActionGroups>
+</ActionDescription>

@@ -1,0 +1,39 @@
+Audit2CM
+---------
+
+This product may not be redistributed outside of the purchasing company or resold.
+
+https://github.com/Yoink4CM/Yoink4CM
+
+
+
+
+USAGE
+From a Powershell command line: 
+
+.\audit2cm.ps1 -TextFilePath ".\hostnames.txt" -CollectionName "Existing Device Collection" -SiteCode "ABC"
+
+
+
+DESCRIPTION
+This script streamlines the process of populating a Configuration Manager device collection with devices listed in an external text file. Each line in the text file should contain a single computer hostname.
+
+PARAMETER TextFilePath
+The full path to the text file containing the list of computer hostnames.
+Each hostname should be on a new line.
+
+PARAMETER CollectionName
+The name of the Configuration Manager device collection to which devices will be added. This collection must already exist.
+
+PARAMETER SiteCode
+Your Configuration Manager site code (e.g., "P01", "MEM").
+
+NOTES
+
+- Ensure the target Device Collection ***already exists*** within Configuration Manager
+
+- Ensure your Powershell settings allow for executing unsigned scripts, or have your company sign this script if required
+- Copy the hostnames from your report (Excel, PDF, etc) into a notepad file, with 1 hostname per line
+- Ensure the Configuration Manager console is installed on the machine where this script is executed, as it provides the necessary PowerShell module.
+- The user running the script must have sufficient permissions in ConfigMgr to add devices to the specified collection.
+- The script will attempt to find the device in ConfigMgr. If a hostname is not found, it will be skipped and logged.

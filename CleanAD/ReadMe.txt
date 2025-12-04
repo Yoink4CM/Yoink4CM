@@ -1,0 +1,2 @@
+Document old PC's will create a spreadsheet of which PC's are identified.  No computers will be moved to the cleanup OU.
+Filter old PC's will move computers to the cleanup OU and document which were moved.
