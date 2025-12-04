@@ -16,7 +16,9 @@ You may NOT:
 From the root folder, the following subfolders are standalone apps:
 
 Audit2CM: accelerate the process of importing device hostnames from external reports into Configuration Manager Device Collections.
+
 CleanAD: remove inactive computers from Active Directory in seconds.
+
 AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
 
 
