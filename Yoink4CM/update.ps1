@@ -1,5 +1,5 @@
 $LocalPath = "C:\Program Files\Yoink Software\Yoink4CM\yoink4cm.ps1"
-$RemoteUrl = "https://www.yoink4cm.com/updates/yoink4cm/yoink4cm.ps1"
+$RemoteUrl = "https://github.com/Yoink4CM/Yoink4CM/blob/main/Yoink4CM/yoink4cm.ps1"
 
 
  if (-not (Test-Path $LocalPath)) {
@@ -71,4 +71,5 @@ $RemoteUrl = "https://www.yoink4cm.com/updates/yoink4cm/yoink4cm.ps1"
         Write-Host "Cleaned up temporary file: $tempFilePath"    
     }
 	
+
 
