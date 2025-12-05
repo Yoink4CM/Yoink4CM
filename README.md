@@ -29,6 +29,7 @@ The following files are needed for Yoink4CM:
 - config.ps1
 - integrate_with_ConfigMgr (run as administrator).bat
 
+See Wiki for install instructions.
 
 
 <!--
