@@ -330,7 +330,7 @@ where
 				
 				$truncPackagename = $Packagename -replace '\s*[\(_].*'
 				
-				$DCName = "$TruckPackagename < $version"
+				$DCName = "$truncPackagename < $version"
 				New-CMDeviceCollection -Name $DCName -LimitingCollectionName "All Systems" -RefreshType Periodic -RefreshSchedule $Schedule
 				$Query = @"
 select SMS_R_SYSTEM.ResourceID,SMS_R_SYSTEM.ResourceType,SMS_R_SYSTEM.Name,SMS_R_SYSTEM.SMSUniqueIdentifier,SMS_R_SYSTEM.ResourceDomainORWorkgroup,SMS_R_SYSTEM.Client from SMS_R_System 
@@ -362,4 +362,5 @@ Remove-Item ".\*.*"
 
 
 Stop-Process -Name "Microsoft.ConfigurationManagement"
+
 Start-Process -FilePath "Microsoft.ConfigurationManagement.exe" -WorkingDirectory "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\bin"
