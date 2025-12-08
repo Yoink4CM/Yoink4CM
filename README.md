@@ -21,6 +21,8 @@ CleanAD: remove inactive computers from Active Directory in seconds.
 
 AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
 
+Yoink4Intune: Grab apps from Winget and package for Intune
+
 
 The following files are needed for Yoink4CM:
 
