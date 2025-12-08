@@ -1,0 +1,9 @@
+& winget download VideoLAN.VLC -d $Tempfolder
+#& winget download Notepad++.Notepad++ -d $Tempfolder
+#& winget download Microsoft.VCRedist.2015+.x86 -d $Tempfolder
+#& winget download Microsoft.VCRedist.2015+.x64 -d $Tempfolder
+#& winget download Dell.CommandUpdate -d $Tempfolder
+#& winget download Python.Python.3.13 -d $Tempfolder
+#& winget download Corel.WinZip -d $Tempfolder
+#& winget download 7zip.7zip -d $Tempfolder
+#& winget download RARLab.WinRAR -d $Tempfolder
