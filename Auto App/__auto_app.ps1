@@ -6,7 +6,7 @@ param (
 if ($FilePath -and (Test-Path -Path $FilePath)) {
     
     $fileName = Split-Path -Leaf $FilePath
-
+	$directory = Split-Path -Parent $FilePath
     
     try {
         $windowsInstaller = New-Object -ComObject WindowsInstaller.Installer
@@ -26,7 +26,7 @@ if ($FilePath -and (Test-Path -Path $FilePath)) {
 		Write-Host "--- Product Information ---" -ForegroundColor Green
 		$PropertiesToGet = @("ProductName", "ProductVersion", "Manufacturer", "ProductCode")
 
-# 1. Create an empty Hash Table to store the results
+		# 1. Create an empty Hash Table to store the results
 		$ProductInfo = @{}
 
 		foreach ($Prop in $PropertiesToGet) {
@@ -66,7 +66,33 @@ if ($FilePath -and (Test-Path -Path $FilePath)) {
         Write-Host "Warning: Could not extract MSI metadata. Ensure the file is a valid MSI." -ForegroundColor DarkYellow
     }
 
-    $commandString = "msiexec /i ""$fileName"" /qn"
+	
+	$Yaml = $fileName -replace "\.msi$", ".yaml"
+    $yamlPath = Join-Path -Path $directory -ChildPath $Yaml
+    
+    $foundSilentParams = $false
+    $finalCommand = ""
+	$commandString = "msiexec /i ""$fileName"" /qn"
+
+    if (Test-Path -Path $yamlPath) {
+        Write-Host "`nFound config file: $Yaml" -ForegroundColor Cyan
+
+		$content = Get-Content -Path $yamlPath -Raw
+		$lines = $content -split '\r?\n'
+    
+
+		$silentLine = $lines | Where-Object { $_ -match "^\s*Silent:" } | Select-Object -First 1
+        
+        if ($silentLine) {
+  
+			$installParams = ($silentLine -replace "^\s*Silent:\s*", "").Trim()
+    
+			$commandString = "msiexec /i `"$fileName`" $installParams"
+			$foundSilentParams = $true
+			Write-Host "Extracted silent parameters: $installParams" -ForegroundColor Green
+		}
+    }
+
 
 	
     Write-Host "`n--- Command Preview ---" -ForegroundColor Green
