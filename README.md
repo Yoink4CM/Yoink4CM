@@ -21,6 +21,10 @@ CleanAD: remove inactive computers from Active Directory in seconds.
 
 AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
 
+Auto App: Drag and drop your installer onto Auto App to automatically create an Application in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
+
+Auto Package: Drag and drop your installer onto Auto Package to automatically create a Package in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
+
 Yoink4Intune: Grab apps from Winget and package for Intune
 
 
