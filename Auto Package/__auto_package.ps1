@@ -47,7 +47,6 @@ if ($FilePath -and (Test-Path -Path $FilePath)) {
     
 
 		$silentLine = $lines | Where-Object { $_ -match "^\s*Silent:" } | Select-Object -First 1
-		write-Host "Silent line: $silentLine"
         
         if ($silentLine) {
   
