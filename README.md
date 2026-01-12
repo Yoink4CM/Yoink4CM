@@ -1,5 +1,9 @@
 Hi there 👋
 
+Feel free to buy us a coffee to help support development!
+
+https://buymeacoffee.com/yoink4cm
+
 Yoink4CM licensing and usage.
 
 You MAY:
