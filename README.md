@@ -19,21 +19,21 @@ You may NOT:
 
 From the root folder, the following subfolders are standalone apps:
 
-Audit2CM: accelerate the process of importing device hostnames from external reports into Configuration Manager Device Collections.
+- Audit2CM: accelerate the process of importing device hostnames from external reports into Configuration Manager Device Collections.
 
-CleanAD: remove inactive computers from Active Directory in seconds.
+- CleanAD: remove inactive computers from Active Directory in seconds.
 
-AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
+- AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant computers.
 
-Auto App: Drag and drop your installer onto Auto App to automatically create an Application in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
+- Auto App: Drag and drop your installer onto Auto App to automatically create an Application in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
 
-Auto OSUP: Drag and drop your extracted Windows ISO folder to automatically upload it to ConfigMgr as an Operating System Upgrade Package (requires Yoink4CM already integrated).
+- Auto OSUP: Drag and drop your extracted Windows ISO folder to automatically upload it to ConfigMgr as an Operating System Upgrade Package (requires Yoink4CM already integrated).
 
-Auto Package: Drag and drop your installer onto Auto Package to automatically create a Package in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
+- Auto Package: Drag and drop your installer onto Auto Package to automatically create a Package in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
 
-Auto WIM: Drag and drop your .WIM file onto Auto WIM to automatically upload an OS image to ConfigMgr (requires Yoink4CM already integrated).
+- Auto WIM: Drag and drop your .WIM file onto Auto WIM to automatically upload an OS image to ConfigMgr (requires Yoink4CM already integrated).
 
-Yoink4Intune: Grab apps from Winget and package for Intune
+- Yoink4Intune: Grab apps from Winget and package for Intune
 
 
 The following files are needed for Yoink4CM:
