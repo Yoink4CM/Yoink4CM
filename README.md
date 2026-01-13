@@ -27,7 +27,11 @@ AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant c
 
 Auto App: Drag and drop your installer onto Auto App to automatically create an Application in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
 
+Auto OSUP: Drag and drop your extracted Windows ISO folder to automatically upload it to ConfigMgr (requires Yoink4CM already integrated).
+
 Auto Package: Drag and drop your installer onto Auto Package to automatically create a Package in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
+
+Auto WIM: Drag and drop your .WIM file onto Auto WIM to automatically upload an OS image to ConfigMgr (requires Yoink4CM already integrated).
 
 Yoink4Intune: Grab apps from Winget and package for Intune
 
@@ -40,19 +44,3 @@ The following files are needed for Yoink4CM:
 - integrate_with_ConfigMgr (run as administrator).bat
 
 See Wiki for install instructions.
-
-
-<!--
-**Yoink4CM/Yoink4CM** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
