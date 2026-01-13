@@ -27,7 +27,7 @@ AD Compliance Guard: Prevent OSD failures by quickly identifying non-compliant c
 
 Auto App: Drag and drop your installer onto Auto App to automatically create an Application in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
 
-Auto OSUP: Drag and drop your extracted Windows ISO folder to automatically upload it to ConfigMgr (requires Yoink4CM already integrated).
+Auto OSUP: Drag and drop your extracted Windows ISO folder to automatically upload it to ConfigMgr as an Operating System Upgrade Package (requires Yoink4CM already integrated).
 
 Auto Package: Drag and drop your installer onto Auto Package to automatically create a Package in your ConfigMgr setup (requires Yoink4CM already integrated).  Supports winget .yaml files.
 
