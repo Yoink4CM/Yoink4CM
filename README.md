@@ -46,4 +46,5 @@ The following files are needed for Yoink4CM:
 See Wiki for install instructions.
 
 
-[![Demo Video](https://img.youtube.com/vi/QCrjztFepmw/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=QCrjztFepmw))
+[![Watch the video](https://img.youtube.com/vi/QCrjztFepmw/0.jpg)](https://www.youtube.com/watch?v=QCrjztFepmw)
+
