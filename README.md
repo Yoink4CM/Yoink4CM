@@ -44,3 +44,6 @@ The following files are needed for Yoink4CM:
 - integrate_with_ConfigMgr (run as administrator).bat
 
 See Wiki for install instructions.
+
+
+[![Demo Video](https://img.youtube.com/vi/QCrjztFepmw/0.jpg)]([https://www.youtube.com/watch?v=VIDEO_ID](https://www.youtube.com/watch?v=QCrjztFepmw))
