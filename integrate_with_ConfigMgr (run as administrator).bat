@@ -8,9 +8,31 @@ set "SOURCE_DIR=%~dp0"
 REM Define destination paths
 set "DEST_DIR_YOINK_SOFTWARE=C:\Program Files\Yoink Software"
 set "DEST_DIR_YOINK_CM=C:\Program Files\Yoink Software\Yoink4CM"
-set "DEST_DIR_XML_1=C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\XmlStorage\Extensions\Actions\3ad39fd0-efd6-11d0-bdcf-00a0c909fdd7"
-set "DEST_DIR_XML_2=C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole\XmlStorage\Extensions\Actions\d2e2cba7-98f5-4d3b-bc2f-b670f0621207"
 
+# Define the two possible root installation paths
+$Path1 = "C:\Program Files (x86)\Microsoft Endpoint Manager\AdminConsole"
+$Path2 = "C:\Program Files (x86)\Microsoft Configuration Manager\AdminConsole"
+
+# Check which path exists and set the base variable
+if (Test-Path $Path1) {
+    $BaseDir = $Path1
+}
+elseif (Test-Path $Path2) {
+    $BaseDir = $Path2
+}
+else {
+    Write-Error "Microsoft Configuration Manager console not found in expected locations."
+    pause
+    exit
+}
+
+# Define your destination variables using the discovered base directory
+$DEST_DIR_XML_1 = Join-Path $BaseDir "XmlStorage\Extensions\Actions\3ad39fd0-efd6-11d0-bdcf-00a0c909fdd7"
+$DEST_DIR_XML_2 = Join-Path $BaseDir "XmlStorage\Extensions\Actions\d2e2cba7-98f5-4d3b-bc2f-b670f0621207"
+
+# Optional: Verify the paths were set correctly
+Write-Host "Target 1: $DEST_DIR_XML_1"
+Write-Host "Target 2: $DEST_DIR_XML_2"
 echo.
 echo --- Starting Yoink Software File Copy Operations ---
 echo.
@@ -241,7 +263,7 @@ goto CONTINUE
 
 :OPENDOC
 echo Opening documentation in your browser...
-rundll32 url.dll,FileProtocolHandler https://www.yoink4cm.com/yoink4cm-documentation/
+rundll32 url.dll,FileProtocolHandler https://github.com/yoink4cm/yoink4cm
 
 :CONTINUE
 
@@ -249,6 +271,6 @@ echo.
 echo Please relaunch Microsoft Configuration Manager Console to finish integration.
 echo Yoink Software integration can be found in the context menus under Application Management --> Applications, and Application Management --> Packages.
 echo.
-echo Questions?  Email support@yoink4cm.com
+echo Questions?  https://github.com/yoink4cm/yoink4cm
 
 pause
