@@ -16,6 +16,9 @@ You may NOT:
 - Resell Yoink4CM for profit.
 - Build on Yoink4CM code and sell it for profit.
 
+Bugfix list:
+https://github.com/Yoink4CM/Yoink4CM/wiki/Bug-Fixes
+
 
 From the root folder, the following subfolders are standalone apps:
 
