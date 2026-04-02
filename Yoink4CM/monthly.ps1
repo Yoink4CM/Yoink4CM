@@ -8,3 +8,4 @@
 & winget download Microsoft.Teams -d $Tempfolder --accept-package-agreements --accept-source-agreements
 & winget download Microsoft.VCRedist.2015+.x86 -d $Tempfolder --accept-package-agreements --accept-source-agreements
 & winget download Microsoft.VCRedist.2015+.x64 -d $Tempfolder --accept-package-agreements --accept-source-agreements
+& winget download VideoLAN.VLC -d $Tempfolder --accept-package-agreements --accept-source-agreements
